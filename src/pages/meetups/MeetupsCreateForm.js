@@ -121,7 +121,26 @@ function MeetupsCreateForm() {
 
   return (
     <Container>
+      <br />
+      <h2>
+        Create a Meetup
+      </h2>
       <Form onSubmit={handleSubmit}>
+      <Form.Group>
+          <Form.Label>Meetup Name:</Form.Label>
+          <Form.Control
+            type="text"
+            name="title"
+            value={title}
+            onChange={handleChange}
+            aria-label="title"
+          />
+          </Form.Group>
+          {errors?.title?.map((message, idx) => (
+          <Alert variant="danger" key={idx}>
+            {message}
+          </Alert>
+        ))}
         <Row>
           <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
             <Container
