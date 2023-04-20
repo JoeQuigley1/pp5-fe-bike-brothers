@@ -66,7 +66,7 @@ function MeetupCreateForm() {
       const { data } = await axiosReq.post("/meetups/", formData);
       history.push(`/meetups/${data.id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
