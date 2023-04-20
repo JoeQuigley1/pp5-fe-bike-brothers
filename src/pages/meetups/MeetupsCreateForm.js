@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 
-import styles from "../../styles/PostCreateEditForm.module.css";
+import styles from "../../styles/CreateMeetupsForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 
@@ -74,84 +74,183 @@ function MeetupsCreateForm() {
     }
   };
 
-  const textFields = (
-    <div className="text-center">
-      <Form.Group>
-        <Form.Label>Title</Form.Label>
-        <Form.Control
-          type="text"
-          name="title"
-          value={title}
-          onChange={handleChange}
-        />
-      </Form.Group>
-      {errors?.title?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))}
-
-      <Form.Group>
-        <Form.Label>Content</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={6}
-          name="content"
-          value={content}
-          onChange={handleChange}
-        />
-      </Form.Group>
-      {errors?.content?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))}
-
-      <Button
-        className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => history.goBack()}
-      >
-        cancel
-      </Button>
-      <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        create
-      </Button>
-    </div>
-  );
-
   return (
-    <Container>
+    <Container className={styles.MeetupForm}>
       <br />
-      <h2>
-        Create a Meetup
-      </h2>
+      <h2>Create a Meetup</h2>
       <Form onSubmit={handleSubmit}>
-      <Form.Group>
+        <Form.Group>
           <Form.Label>Meetup Name:</Form.Label>
           <Form.Control
-            type="text"
+            type="textarea"
             name="title"
             value={title}
             onChange={handleChange}
             aria-label="title"
           />
-          </Form.Group>
-          {errors?.title?.map((message, idx) => (
+        </Form.Group>
+        {errors?.title?.map((message, idx) => (
           <Alert variant="danger" key={idx}>
             {message}
           </Alert>
         ))}
+
         <Row>
-          <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
-            <Container
-              className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
-            ></Container>
-          </Col>
-          <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">
-            <Container className={appStyles.Content}>{textFields}</Container>
-          </Col>
+          <Container
+            className={`${appStyles.Content} ${styles.Container} className="py-2 p-0 p-md-2" md={7} lg={8}  flex-column justify-content-center`}
+          >
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Content:
+              </Form.Label>
+              <Form.Control
+                type="textarea"
+                name="content"
+                value={content}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Date:
+              </Form.Label>
+              <Form.Control
+                type="date"
+                name="content"
+                value={date}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Time:
+              </Form.Label>
+              <Form.Control
+                type="time"
+                name="content"
+                value={time}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                City:
+              </Form.Label>
+              <Form.Control
+                type="textarea"
+                name="content"
+                value={city}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Venue:
+              </Form.Label>
+              <Form.Control
+                type="textarea"
+                name="content"
+                value={venue}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Bike Type:
+                (give options)
+              </Form.Label>
+              <Form.Control
+                type="textarea"
+                name="content"
+                value={bike_type}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Duration:
+              </Form.Label>
+              <Form.Control
+                type="textarea"
+                name="content"
+                value={duration}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+            <Form.Group>
+              <Form.Label className="flex-column justify-content-center">
+                Spaces:
+              </Form.Label>
+              <Form.Control
+                type="number"
+                name="content"
+                value={content}
+                onChange={handleChange}
+                aria-label="content"
+              />
+            </Form.Group>
+            {errors?.title?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+          </Container>
         </Row>
       </Form>
+      <br />
+      <Row className={styles.MeetupForm}>
+        <Button type="submit" className={btnStyles.Button}>
+          Submit
+        </Button>
+
+        <Button onClick={() => history.goBack()} className={btnStyles.Button} >
+          Cancel
+        </Button>
+      </Row>
     </Container>
   );
 }
