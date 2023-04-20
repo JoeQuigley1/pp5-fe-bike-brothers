@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+## Bike Bros
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Introduction 
 
-In the project directory, you can run:
+Bike bros is intended to be a site for Motorcycle enthusiasts to come together.
+The site allows users to and share photos of their bikes. 
+The app also encourages users to create Bike Meets where like-minded people can meet to show off their bikes. 
 
-### `npm start`
+# Deplyed FRONTEND website 
+A link to the live website can be found [here](https://fe-bike-bros.herokuapp.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Deployed BACKEND website 
+A link to the live website can be found [here](https://bike-bros.herokuapp.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# DRF README
+A link to the BACKEND README can be found here [here](https://github.com/JoeQuigley1/pp5-drf-bike-brothers)
 
-### `npm test`
+## Credits
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Project Setup and Initial Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Create a new repository in GitHub (do not use CI Template).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Create new workspace by clicking 'Gitpod' button. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Once workspace has loaded, run terminal command **npx create-react-app . --use-npm** to create React app. 
+This Step raised an error which was consistent throughout the project. 
 
-### `npm run eject`
+4. To create the app with Gitpod I use nvm install 16 && nvm use 16 which created the app successfully. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. Once the app is installed, run terminal command **npm start** to check app is working. Browser should open with the spinning React logo on a dark blue background. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Remove logo import from the top of App.js, and replace the React Header element with a custom h1 element containing 'Hello World!'. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+7. Confirm the changes have rendered in the browser preview then add, commit and push changes. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+8. Create a new app in Heroku. 
 
-## Learn More
+9. Click on 'Deploy tab and go to the 'Deployment Method'. Click on Github.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+10. Connect to a Github account  and search for the relevant repository.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+11. Use 'Manual Deply and click 'Deploy Branch'. Click on 'build logs' to monitor the build. 
 
-### Code Splitting
+12. Click open app to view the deployed app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+13. To install Bootstrap, run terminal command **npm install react-bootstrap@1.6.3 bootstrap@4.6.0**
 
-### Analyzing the Bundle Size
+# Final Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. In 'scripts' section of 'package.json' in gitpod, add the followin command: 
+"heroku-prebuild: "npm install -g serve"
 
-### Making a Progressive Web App
+2. Add Procfile to project root & populate with the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+web: serve -s build
 
-### Advanced Configuration
+3. Ensure all code is pushed to Github and up to date. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Log into Heorku.
 
-### Deployment
+5. From the Dashboard lick on 'Deploy tab.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+6. Use 'Deploy Branch' and Click on 'build logs' to monitor the build, wait for the build to complete. 
 
-### `npm run build` fails to minify
+7. One the app has been deployed to Heroku click on the oppp app button. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. Test the Deployed app works. 
+
+
+# Deployment Elephant SQL 
+
+As of November 2022, Heroku ceased to provide a free service. The hosting of this website is carried out using the free service [Elephant SQL](https://www.elephantsql.com/). 
+
+The steps used to deploy this project can be seen [here](https://code-institute-students.github.io/deployment-docs/30-pp4/django-01-create-a-database).
+
+### Media
+
+- Favicon and Logo by <a href="https://www.flaticon.com/free-icons/motorcycle" title="motorcycle icons">Motorcycle icons created by Freepik - Flaticon</a>
+- Avatar and No Results images are from Code Institute Moments walkthrough project
+
+
+## Acknowledgements 
+
+
+- [Martina Terlevic](https://github.com/SephTheOverwitch): For help and support throughout a tough year.
+- Tutor support for their help in solving the **npx create-react-app . --use-npm** problem
+- Slack for the huge archive of helpful information
