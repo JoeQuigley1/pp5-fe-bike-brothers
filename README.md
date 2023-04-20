@@ -28,7 +28,7 @@ A link to the BACKEND README can be found here [here](https://github.com/JoeQuig
 3. Once workspace has loaded, run terminal command **npx create-react-app . --use-npm** to create React app. 
 This Step raised an error which was consistent throughout the project. 
 
-4. To create the app with Gitpod I use nvm install 16 && nvm use 16 which created the app successfully. 
+4. To create the app with Gitpod I used "nvm install 16 && nvm use 16" which created the app successfully. 
 
 5. Once the app is installed, run terminal command **npm start** to check app is working. Browser should open with the spinning React logo on a dark blue background. 
 
