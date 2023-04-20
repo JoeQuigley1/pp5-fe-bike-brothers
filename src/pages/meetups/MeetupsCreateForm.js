@@ -123,10 +123,10 @@ function MeetupsCreateForm() {
               </Form.Label>
               <Form.Control
                 type="date"
-                name="content"
+                name="date"
                 value={date}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="date"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -134,16 +134,17 @@ function MeetupsCreateForm() {
                 {message}
               </Alert>
             ))}
+
             <Form.Group>
               <Form.Label className="flex-column justify-content-center">
                 Time:
               </Form.Label>
               <Form.Control
                 type="time"
-                name="content"
+                name="time"
                 value={time}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="time"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -158,10 +159,10 @@ function MeetupsCreateForm() {
               </Form.Label>
               <Form.Control
                 type="textarea"
-                name="content"
+                name="city"
                 value={city}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="city"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -169,16 +170,17 @@ function MeetupsCreateForm() {
                 {message}
               </Alert>
             ))}
+
             <Form.Group>
               <Form.Label className="flex-column justify-content-center">
                 Venue:
               </Form.Label>
               <Form.Control
                 type="textarea"
-                name="content"
+                name="venue"
                 value={venue}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="venue"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -188,15 +190,14 @@ function MeetupsCreateForm() {
             ))}
             <Form.Group>
               <Form.Label className="flex-column justify-content-center">
-                Bike Type:
-                (give options)
+                Bike Type: (give options)
               </Form.Label>
               <Form.Control
                 type="textarea"
-                name="content"
+                name="bike_type"
                 value={bike_type}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="bike_type"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -210,10 +211,10 @@ function MeetupsCreateForm() {
               </Form.Label>
               <Form.Control
                 type="textarea"
-                name="content"
+                name="duration"
                 value={duration}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="duration"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -227,10 +228,10 @@ function MeetupsCreateForm() {
               </Form.Label>
               <Form.Control
                 type="number"
-                name="content"
-                value={content}
+                name="spaces"
+                value={spaces}
                 onChange={handleChange}
-                aria-label="content"
+                aria-label="spaces"
               />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -240,17 +241,19 @@ function MeetupsCreateForm() {
             ))}
           </Container>
         </Row>
-      </Form>
-      <br />
-      <Row className={styles.MeetupForm}>
+        <br />
+        <Row className={styles.MeetupForm}>
         <Button type="submit" className={btnStyles.Button}>
           Submit
         </Button>
 
-        <Button onClick={() => history.goBack()} className={btnStyles.Button} >
+        <Button onClick={() => history.goBack()} className={btnStyles.Button}>
           Cancel
         </Button>
       </Row>
+      </Form>
+      <br />
+     
     </Container>
   );
 }
