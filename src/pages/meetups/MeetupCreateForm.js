@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 
@@ -14,10 +13,10 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
-function MeetupsCreateForm() {
+function MeetupCreateForm() {
   const [errors, setErrors] = useState({});
 
-  const [meetupsData, setMeetupsData] = useState({
+  const [meetupData, setMeetupData] = useState({
     title: "",
     content: "",
     date: "",
@@ -38,13 +37,13 @@ function MeetupsCreateForm() {
     bike_type,
     spaces,
     duration,
-  } = meetupsData;
+  } = meetupData;
 
   const history = useHistory();
 
   const handleChange = (event) => {
-    setMeetupsData({
-      ...meetupsData,
+    setMeetupData({
+      ...meetupData,
       [event.target.name]: event.target.value,
     });
   };
@@ -258,4 +257,4 @@ function MeetupsCreateForm() {
   );
 }
 
-export default MeetupsCreateForm;
+export default MeetupCreateForm;
