@@ -15,7 +15,7 @@ import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import MeetupCreateForm from "./pages/meetups/MeetupCreateForm";
-import MeetupPage from "./pages/meetups/MeetupPage";
+
 
 function App() {
   const currentUser = useCurrentUser();
@@ -76,7 +76,6 @@ function App() {
           />
 
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
-          <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route render={() => <p>Page not found!</p>} />
         </Switch>
       </Container>
