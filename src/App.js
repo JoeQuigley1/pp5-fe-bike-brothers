@@ -16,6 +16,7 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import MeetupCreateForm from "./pages/meetups/MeetupCreateForm";
 import NotFound from "./components/NotFound";
+import MeetupsPage from "./pages/meetups/MeetupsPage";
 
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
           />
 
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
+          <Route exact path="/meetups/" render={() => <MeetupsPage />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
