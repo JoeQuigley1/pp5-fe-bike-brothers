@@ -17,6 +17,7 @@ import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import MeetupCreateForm from "./pages/meetups/MeetupCreateForm";
 import NotFound from "./components/NotFound";
 import MeetupPage from "./pages/meetups/MeetupPage";
+import MeetupsPage from "./pages/meetups/MeetupsPage";
 
 
 function App() {
@@ -28,6 +29,12 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
+          <Route exact path="/signin" render={() => <SignInForm />} />
+          <Route exact path="/signup" render={() => <SignUpForm />} />
+          <Route exact path="/posts/create" render={() => <PostCreateForm />} />
+          <Route exact path="/posts/:id" render={() => <PostPage />} />
+          <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
+          <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route
             exact
             path="/"
@@ -55,12 +62,6 @@ function App() {
               />
             )}
           />
-          <Route exact path="/signin" render={() => <SignInForm />} />
-          <Route exact path="/signup" render={() => <SignUpForm />} />
-          <Route exact path="/posts/create" render={() => <PostCreateForm />} />
-          <Route exact path="/posts/:id" render={() => <PostPage />} />
-          <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
-          <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route
             exact
             path="/profiles/:id/edit/username"
@@ -76,6 +77,7 @@ function App() {
             path="/profiles/:id/edit"
             render={() => <ProfileEditForm />}
           />
+          <Route exact path="/meetups" render={() => <MeetupsPage message="No results" />} />
           <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
           <Route render={() => <NotFound />} />

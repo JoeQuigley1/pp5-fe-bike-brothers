@@ -53,6 +53,11 @@ const NavBar = () => {
 
   const loggedInIcons = (
     <>
+    <NavLink className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/meetups">
+      <i className="fas fa-calendar-days"></i>Meetups
+    </NavLink>
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
