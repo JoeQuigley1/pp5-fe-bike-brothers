@@ -37,8 +37,10 @@ const Meetup = (props) => {
             <div><span>{updated_at}</span>
             {is_owner && meetupPage && "..." } </div>
         </Media>
+        <Link to={`/meetups/${id}`} >
+            <h2 > Title: {title}</h2></Link>
     </Card.Body>
-    <h2> Title: {title}</h2>
+    
     <p>Date:{date}</p>
     <p> {content}</p>
     <p>What city: {city}</p>

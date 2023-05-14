@@ -37,7 +37,7 @@ function MeetupsPage({message, filter = ""}) {
             <Meetup key={meetup.id} {...meetup} setMeetups={setMeetups} />
           ))
         ) : (
-          <div>Placeholder TEXT</div>
+          <div>ADD SPINNER</div>
         )}
       </Col>
       <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
