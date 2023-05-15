@@ -18,6 +18,7 @@ import MeetupCreateForm from "./pages/meetups/MeetupCreateForm";
 import NotFound from "./components/NotFound";
 import MeetupPage from "./pages/meetups/MeetupPage";
 import MeetupsPage from "./pages/meetups/MeetupsPage";
+import MeetupEditForm from "./pages/meetups/MeetupEditForm";
 
 
 function App() {
@@ -78,8 +79,9 @@ function App() {
             render={() => <ProfileEditForm />}
           />
           <Route exact path="/meetups" render={() => <MeetupsPage message="No results" />} />
-          <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
+          <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
+          <Route exact path="/meetups/:id/edit" render={() => <MeetupEditForm />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
