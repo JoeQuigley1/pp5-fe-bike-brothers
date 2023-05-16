@@ -1,3 +1,7 @@
-.MeetupForm {
+.AlignContent {
     text-align: center;
+}
+
+.SpaceContent{
+    justify-content: space-evenly;
 }
