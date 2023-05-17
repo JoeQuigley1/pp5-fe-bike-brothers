@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
 import appStyles from "../../App.module.css";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { axiosReq } from "../../api/axiosDefaults";
 import Meetup from "./Meetup";
 import { Container } from "react-bootstrap";
 import Asset from "../../components/Asset";
-import NoResults from "../../assets/no-results.png";
+
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 
@@ -34,9 +32,9 @@ function MeetupsPage({ message, filter = "" }) {
   }, [filter, pathname]);
 
   return (
-    <Row className="h-100">
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles mobile</p>
+    <Container className="h-100">
+      <Container>
+        <Col className="py-2 p-0 p-lg-2" >
         {hasLoaded ? (
           <>
             {meetups.results.length ? (
@@ -50,9 +48,10 @@ function MeetupsPage({ message, filter = "" }) {
               hasMore={!!meetups.next}
               next={() => fetchMoreData(meetups, setMeetups)}
               />
+              
             ) : (
               <Container className={appStyles.Content}>
-                <Asset src={NoResults} message={message} />
+                <Asset message={message} />
               </Container>
             )}
           </>
@@ -62,10 +61,11 @@ function MeetupsPage({ message, filter = "" }) {
           </Container>
         )}
       </Col>
-      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-        <p>Popular profiles for desktop</p>
-      </Col>
-    </Row>
+      </Container>
+      
+  
+    </Container>
+    
   );
 }
 

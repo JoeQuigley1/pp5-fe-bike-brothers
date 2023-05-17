@@ -1,11 +1,12 @@
 import React from "react";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media } from "react-bootstrap";
+import { Card, Container, Media } from "react-bootstrap";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Avatar from "../../components/Avatar";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import { axiosRes } from "../../api/axiosDefaults";
+import styles from "../../styles/Meetup.module.css"
 
 const Meetup = (props) => {
   const {
@@ -23,7 +24,7 @@ const Meetup = (props) => {
     bike_type,
     spaces,
     duration,
-    meetupPage
+    meetupPage,
   } = props;
 
   const currentUser = useCurrentUser();
@@ -43,30 +44,47 @@ const Meetup = (props) => {
     }
   };
 
-  
-  return <Card>
-    <Card.Body>
-        <Media className="align-items-center justify-content-between">
-            <Link to={`/profiles/${profile_id}`}>
+  return (
+    <Card className="align-items-center justify-content-between">
+      <Card.Body>
+        <Media className="justify-content-between py-2">
+          <Link to={`/profiles/${profile_id}`}>
             <Avatar src={profile_image} height={30} />
-             {owner}
-            </Link>
-            <div><span>{updated_at}</span>
-            {is_owner && meetupPage && <MoreDropdown handleEdit={handleEdit} handleDelete={handleDelete} />  } </div>
+            {owner}
+          </Link>
+          <div>
+            <span>{updated_at}</span>
+            {is_owner && meetupPage && (
+              <MoreDropdown
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+              />
+            )}{" "}
+          </div>
         </Media>
         <Link to={`/meetups/${id}`} >
-            <h2 > Title: {title}</h2></Link>
-    </Card.Body>
-    
-    <p>Date:{date}</p>
-    <p> {content}</p>
-    <p>What city: {city}</p>
-    <p>Location: {venue}</p>
-    <p>Time: {time}</p>
-    <p>Duration: {duration}</p>
-    <p>What bikes: {bike_type}</p>
-    <p>Capacity: {spaces}</p>
-  </Card>;
+          <h2>
+            Title: {title}
+            <i className="fas fa-arrow-up-right-from-square"></i>
+          </h2>
+        </Link>
+      </Card.Body>
+      <Container className={styles.Container}>
+        <Card >
+          <Card.Body className={styles.CardBody} >
+            <p >Date: {date}</p>
+            <p >Description: {content}</p>
+            <p>What city: {city}</p>
+            <p>Location: {venue}</p>
+            <p>Time: {time}</p>
+            <p>Duration: {duration}</p>
+            <p>What bikes: {bike_type}</p>
+            <p>Capacity: {spaces}</p>
+          </Card.Body>
+        </Card>
+      </Container>
+    </Card>
+  );
 };
 
 export default Meetup;

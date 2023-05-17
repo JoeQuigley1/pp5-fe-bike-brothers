@@ -1,0 +1,9 @@
+.Container {
+    padding: 0;
+    
+}
+
+.CardBody {
+    background-color: #fee8b8;
+    text-align: left;
+}
