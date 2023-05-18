@@ -16,7 +16,35 @@ A link to the live website can be found [here](https://bike-bros.herokuapp.com/)
 # DRF README
 A link to the BACKEND README can be found here [here](https://github.com/JoeQuigley1/pp5-drf-bike-brothers)
 
-## Credits
+## Testing
+
+## Frameworks, Libraries & Programs Used
+- Font Awesome: Used for the social links, footers, and 
+- Google: Font: NEED TO UPDATE FONT 
+- Gitpod
+- Github
+- Lucidchart: Used to design wireframes and mockups and Database mockups for the backend.
+- Favicon: Used to provide the image for the icon and tab
+- Django: Used to build the backend API for the front-end side of the project.
+- ReactJS: Used to build the components in the front-end of the project.
+
+## Components
+
+- AxiosDefault.js: Allows communication to the backend API
+- Assest.js: Used to load a spinner when loading throughout the site.
+- Avatar.js: Used to display the profile image throughout the site.
+- DropdownMenu.js: Used to allow users to edit and delete their Meetup and Posts
+- CurrentUserContext.js: Used to allow users further functionality such as edit/delete once logged in.
+- ProfileDataContext.js: Used to allow logged-in users to follow/unfollow other users.
+
+
+
+
+- UseClickOutsideToggle.js: DESCRIPTION PENDING
+- useRedirect.js: DESCRIPTION PENDING
+- utils.js: DESCRIPTION PENDING
+
+
 
 
 # Project Setup and Initial Deployment

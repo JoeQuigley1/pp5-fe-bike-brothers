@@ -16,6 +16,7 @@ import { removeTokenTimestamp } from "../utils/utils";
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
+  
 
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
@@ -79,7 +80,7 @@ const NavBar = () => {
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}
       >
-        <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
+        <Avatar src={currentUser?.profile_image} height={40} /> {currentUser?.username} 
       </NavLink>
     </>
   );
