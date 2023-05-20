@@ -5,3 +5,9 @@
 .SpaceContent{
     justify-content: space-evenly;
 }
+
+.Button {
+    background-color: #7EBDC2;
+    border: 1px;
+    border-color: #7EBDC2;
+}
