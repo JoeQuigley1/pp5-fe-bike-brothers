@@ -3,7 +3,9 @@
     
 }
 
-.CardBody {
-    background-color: #fee8b8;
+
+.Content {
+    background-color: #dadadf;
     text-align: left;
+    color: #231F20;
 }

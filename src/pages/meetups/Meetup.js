@@ -45,8 +45,8 @@ const Meetup = (props) => {
   };
 
   return (
-    <Card className="align-items-center justify-content-between">
-      <Card.Body>
+    <Card >
+      <Card.Body className={styles.Title}>
         <Media className="justify-content-between py-2">
           <Link to={`/profiles/${profile_id}`}>
             <Avatar src={profile_image} height={30} />
@@ -71,7 +71,7 @@ const Meetup = (props) => {
       </Card.Body>
       <Container className={styles.Container}>
         <Card >
-          <Card.Body className={styles.CardBody} >
+          <Card.Body className={styles.Content} >
             <p >Date: {date}</p>
             <p >Description: {content}</p>
             <p>What city: {city}</p>
