@@ -16,7 +16,30 @@ A link to the live website can be found [here](https://bike-bros.herokuapp.com/)
 # DRF README
 A link to the BACKEND README can be found here [here](https://github.com/JoeQuigley1/pp5-drf-bike-brothers)
 
+## UX 
+
+### Color Scheme
+-Add image 
+## Features
+### Existing Features:
+Navbar
+Posts
+Profiles
+Meetups
+Creat/ Edit Meetup
+Sign in
+Sign out
+404(Pending)
+
+
 ## Testing
+### Manual Testing:
+- SignUpForm
+- CRUD functionality has been tested and is working on the following: Posts| Comments | Likes | Meetups | Follow | Profile
+- Profiles do not have have delete functionality
+- Likes and Comments can only be created and deleted.
+- All links work and lead to the desired page
+
 
 ## Frameworks, Libraries & Programs Used
 - Font Awesome: Used for the social links, footers, and 
