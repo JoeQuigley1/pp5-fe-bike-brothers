@@ -57,15 +57,12 @@ Sign out
 - Assest.js: Used to load a spinner when loading throughout the site.
 - Avatar.js: Used to display the profile image throughout the site.
 - DropdownMenu.js: Used to allow users to edit and delete their Meetup and Posts
+- FaqAccordion.js: Custom component used to display the FAQ questions and answers. 
 - CurrentUserContext.js: Used to allow users further functionality such as edit/delete once logged in.
 - ProfileDataContext.js: Used to allow logged-in users to follow/unfollow other users.
-
-
-
-
-- UseClickOutsideToggle.js: DESCRIPTION PENDING
-- useRedirect.js: DESCRIPTION PENDING
-- utils.js: DESCRIPTION PENDING
+- UseClickOutsideToggle.js: Used to collapse the navbar burger menu when an item or an area outside the menu is clicked.
+- useRedirect.js: Redirects user to another page if they do not have appropriate access. 
+- utils.js: Supplies Infinite Scroll functionality and JWT functionality accross entire app. 
 
 
 
@@ -76,12 +73,12 @@ Sign out
 
 2. Create new workspace by clicking 'Gitpod' button. 
 
-3. Once workspace has loaded, run terminal command **npx create-react-app . --use-npm** to create React app. 
+3. Once workspace has loaded, run terminal command `npx create-react-app . --use-npm` to create React app. 
 This Step raised an error which was consistent throughout the project. 
 
-4. To create the app with Gitpod I used "nvm install 16 && nvm use 16" which created the app successfully. 
+4. To create the app with Gitpod I used `nvm install 16 && nvm use 16` which created the app successfully. 
 
-5. Once the app is installed, run terminal command **npm start** to check app is working. Browser should open with the spinning React logo on a dark blue background. 
+5. Once the app is installed, run terminal command `npm start` to check app is working. Browser should open with the spinning React logo on a dark blue background. 
 
 6. Remove logo import from the top of App.js, and replace the React Header element with a custom h1 element containing 'Hello World!'. 
 
