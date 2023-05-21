@@ -19,6 +19,7 @@ import NotFound from "./components/NotFound";
 import MeetupPage from "./pages/meetups/MeetupPage";
 import MeetupsPage from "./pages/meetups/MeetupsPage";
 import MeetupEditForm from "./pages/meetups/MeetupEditForm";
+import About from "./pages/about/About";
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
           <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route exact path="/meetups/:id/edit" render={() => <MeetupEditForm />} />
+          <Route exact path="/about"render={() => <About />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
