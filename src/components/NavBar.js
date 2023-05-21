@@ -138,7 +138,7 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/about"
             >
-              <i class="fa-solid fa-question"></i>About
+              <i className="fa-solid fa-question"></i>About
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}
