@@ -9,3 +9,10 @@
     text-align: left;
     color: #231F20;
 }
+
+
+@media screen and (max-width: 402px) {
+    h2 {
+      padding-top: 20px;
+    }
+  }
