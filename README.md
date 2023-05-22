@@ -18,8 +18,19 @@ A link to the BACKEND README can be found here [here](https://github.com/JoeQuig
 
 ## UX 
 
+### wireframe
+
+- Wireframes for my project can be found [here](/src/assets/wireframes/)
+
+
+### Site structure
+
+
+![Site Flowchart](src/assets/readme_screenshots/site-flow.png)
+
+
 ### Color Scheme
--Add image 
+![Colour Scheme](src/assets/readme_screenshots/color%20scheme.png)
 ## Features
 ### Existing Features:
 Navbar
@@ -94,7 +105,7 @@ This Step raised an error which was consistent throughout the project.
 
 12. Click open app to view the deployed app.
 
-13. To install Bootstrap, run terminal command **npm install react-bootstrap@1.6.3 bootstrap@4.6.0**
+13. To install Bootstrap, run terminal command `npm install react-bootstrap@1.6.3 bootstrap@4.6.0`
 
 # Final Deployment
 
