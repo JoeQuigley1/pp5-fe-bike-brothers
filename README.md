@@ -1,5 +1,6 @@
 ## Bike Bros
 
+Add AmIResponsive HERE
 
 # Introduction 
 
@@ -16,9 +17,18 @@ A link to the live website can be found [here](https://bike-bros.herokuapp.com/)
 # DRF README
 A link to the BACKEND README can be found here [here](https://github.com/JoeQuigley1/pp5-drf-bike-brothers)
 
+
+
 ## UX 
 
-### wireframe
+
+### Purpose
+
+### Site Goals
+
+### User Stories
+
+### wireframes
 
 - Wireframes for my project can be found [here](/src/assets/wireframes/)
 
@@ -31,26 +41,26 @@ A link to the BACKEND README can be found here [here](https://github.com/JoeQuig
 
 ### Color Scheme
 ![Colour Scheme](src/assets/readme_screenshots/color%20scheme.png)
+
+### Typography
+- The font I chose to use in my app is "Lexend" as it is a widely used font, and very user-friendly. This allows a better user experience when reading content. 
+
 ## Features
 ### Existing Features:
-Navbar
-Posts
-Profiles
-Meetups
-Creat/ Edit Meetup
-Sign in
-Sign out
-404(Pending)
+- Navbar
+- Posts
+- Profiles
+- Meetups
+- Create/Edit Meetup
+- Sign in
+- Sign out
+- About
 
 
 ## Testing
-### Manual Testing:
-- SignUpForm
-- CRUD functionality has been tested and is working on the following: Posts| Comments | Likes | Meetups | Follow | Profile
-- Profiles do not have have delete functionality
-- Likes and Comments can only be created and deleted.
-- All links work and lead to the desired page
 
+### Manual Testing
+- Manual Testing can be found [here](/TESTS.md).
 
 ## Frameworks, Libraries & Programs Used
 - Font Awesome: Used for the social links, footers, and 
