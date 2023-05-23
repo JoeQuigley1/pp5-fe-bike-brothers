@@ -63,7 +63,7 @@ function CreateContactForm() {
         </Form.Group>
         <Form.Group>
           <Form.Control
-            type="text"
+            type="email"
             name="email"
             value={email}
             onChange={handleChange}
