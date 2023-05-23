@@ -20,6 +20,7 @@ import MeetupPage from "./pages/meetups/MeetupPage";
 import MeetupsPage from "./pages/meetups/MeetupsPage";
 import MeetupEditForm from "./pages/meetups/MeetupEditForm";
 import About from "./pages/about/About";
+import CreateContactForm from "./pages/contact/CreateContactForm";
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
           <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route exact path="/meetups/:id/edit" render={() => <MeetupEditForm />} />
           <Route exact path="/about"render={() => <About />} />
+          <Route exact path="/contact"render={() => <CreateContactForm />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
