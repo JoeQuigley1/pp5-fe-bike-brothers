@@ -242,6 +242,7 @@ function MeetupCreateForm() {
             <Form.Control
               type="number"
               name="spaces"
+              min={1}
               value={spaces}
               onChange={handleChange}
               aria-label="spaces"
