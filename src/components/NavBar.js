@@ -12,11 +12,9 @@ import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
 
-
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
-  
 
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
@@ -32,33 +30,32 @@ const NavBar = () => {
 
   const addPostIcon = (
     <>
-    <NavLink
-      className={styles.NavLink}
-      activeClassName={styles.Active}
-      to="/posts/create"
-    >
-      <i className="far fa-plus-square"></i>Add post
-    </NavLink>
-    <NavLink
-    className={styles.NavLink}
-    activeClassName={styles.Active}
-    to="/meetups/create"
-  >
-    <i className="fas fa-plus-square"></i>Add a Meet
-  </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/posts/create"
+      >
+        <i className="far fa-plus-square"></i>Add post
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/meetups/create"
+      >
+        <i className="fas fa-plus-square"></i>Add a Meet
+      </NavLink>
     </>
-    
   );
-
-
 
   const loggedInIcons = (
     <>
-    <NavLink className={styles.NavLink}
+      <NavLink
+        className={styles.NavLink}
         activeClassName={styles.Active}
-        to="/meetups">
-      <i className="fas fa-calendar-days"></i>Meetups
-    </NavLink>
+        to="/meetups"
+      >
+        <i className="fas fa-calendar-days"></i>Meetups
+      </NavLink>
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
@@ -80,7 +77,8 @@ const NavBar = () => {
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}
       >
-        <Avatar src={currentUser?.profile_image} height={40} /> {currentUser?.username} 
+        <Avatar src={currentUser?.profile_image} height={40} />{" "}
+        {currentUser?.username}
       </NavLink>
     </>
   );
@@ -132,6 +130,13 @@ const NavBar = () => {
             >
               <i className="fas fa-home"></i>Home
             </NavLink>
+            <NavLink
+              exact
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/contact"
+            >
+              <i className="fa-solid fa-pen-to-square"></i>Contact</NavLink>
             <NavLink
               exact
               className={styles.NavLink}

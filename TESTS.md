@@ -12,7 +12,15 @@
 - Likes and Comments can only be created and deleted.
 - All links work and lead to the desired page
 
-### Feature Testing
+## Feature Testing
+
+## User Story Testing
+
+### Sign up
+- As a user I can sign up and register as a user so that I can gain full access to the site
+
+![Sign up](/src/assets/testing_screenshots/Sign-up-crit.png)
+
 
 
 ### Validator Testing

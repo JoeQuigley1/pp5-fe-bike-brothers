@@ -1,8 +1,8 @@
-
 import React, { useState } from "react";
 import { Button, Container, Form, Row } from "react-bootstrap";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+
 
 function CreateContactForm() {
   const [errors, setErrors] = useState({});
@@ -12,10 +12,9 @@ function CreateContactForm() {
     lname: "",
     email: "",
     content: "",
-    
   });
 
-  const { fname, lname, email, content,  } = contactFormData;
+  const { fname, lname, email, content } = contactFormData;
 
   const history = useHistory();
 
@@ -30,7 +29,7 @@ function CreateContactForm() {
     event.preventDefault();
     try {
       await axiosReq.post("/contact/", contactFormData);
-      history.push("/about");
+      history.push("/confirmation");
     } catch (err) {
       console.log(err);
       setErrors(err.response?.data);
@@ -39,10 +38,17 @@ function CreateContactForm() {
 
   return (
     <Container>
+      <br />
       <h2>Please get in touch!</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group>
+          {errors?.fname?.map((message, idx) => (
+            <Alert variant="warning" key={idx}>
+              {message}
+            </Alert>
+          ))}
           <Form.Control
+            required
             type="text"
             name="fname"
             value={fname}
@@ -52,7 +58,13 @@ function CreateContactForm() {
           ></Form.Control>
         </Form.Group>
         <Form.Group>
+          {errors?.lname?.map((message, idx) => (
+            <Alert variant="warning" key={idx}>
+              {message}
+            </Alert>
+          ))}
           <Form.Control
+            required
             type="text"
             name="lname"
             value={lname}
@@ -62,9 +74,15 @@ function CreateContactForm() {
           ></Form.Control>
         </Form.Group>
         <Form.Group>
+          {errors?.email?.map((message, idx) => (
+            <Alert variant="warning" key={idx}>
+              {message}
+            </Alert>
+          ))}
           <Form.Control
             type="email"
             name="email"
+            required
             value={email}
             onChange={handleChange}
             aria-label="email"
@@ -72,7 +90,13 @@ function CreateContactForm() {
           ></Form.Control>
         </Form.Group>
         <Form.Group>
+          {errors?.content?.map((message, idx) => (
+            <Alert variant="warning" key={idx}>
+              {message}
+            </Alert>
+          ))}
           <Form.Control
+            required
             type="textarea"
             name="content"
             value={content}
@@ -81,13 +105,9 @@ function CreateContactForm() {
             placeholder="Please write your message here.."
           ></Form.Control>
         </Form.Group>
-        
 
-        <Button type="submit" >
-            Submit
-          </Button>
+        <Button type="submit">Submit</Button>
       </Form>
-    
     </Container>
   );
 }
