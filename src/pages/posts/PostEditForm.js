@@ -22,8 +22,9 @@ function PostEditForm() {
     title: "",
     content: "",
     image: "",
+    bike_type: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, image, bike_type } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -35,7 +36,9 @@ function PostEditForm() {
         const { data } = await axiosReq.get(`/posts/${id}/`);
         const { title, content, image, is_owner } = data;
 
-        is_owner ? setPostData({ title, content, image }) : history.push("/");
+        is_owner
+          ? setPostData({ title, content, image, bike_type })
+          : history.push("/");
       } catch (err) {
         // console.log(err);
       }
@@ -67,6 +70,7 @@ function PostEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("bike_type", bike_type);
 
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
@@ -95,6 +99,32 @@ function PostEditForm() {
         />
       </Form.Group>
       {errors?.title?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
+<Form.Label>Bike Type:</Form.Label>
+      <Form.Group>
+        <Form.Control
+          as="select"
+          defaultValue="What kind of bike.."
+          name="bike_type"
+          onChange={handleChange}
+        >
+          <option value="other">Other</option>
+          <option value="standard">Standard</option>
+          <option value="cruiser">Cruiser</option>
+          <option value="sports">Sports</option>
+          <option value="naked">Naked</option>
+          <option value="tourer">Tourer</option>
+          <option value="sports_touring">Sports Touring</option>
+          <option value="scrambler">Scrambler</option>
+          <option value="scooter">Scooter</option>
+          <option value="moped">Moped</option>
+        </Form.Control>
+      </Form.Group>
+      {errors?.bike_type?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
