@@ -141,9 +141,10 @@ function MeetupEditForm() {
               </Alert>
             ))}
             <Form.Control
-              type="textarea"
+              as="textarea"
               name="content"
               value={content}
+              rows={4}
               onChange={handleChange}
               aria-label="content"
               placeholder="What kind of meetup is it.."

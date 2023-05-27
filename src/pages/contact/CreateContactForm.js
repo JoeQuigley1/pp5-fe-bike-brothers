@@ -3,7 +3,6 @@ import { Button, Container, Form, Row } from "react-bootstrap";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
-
 function CreateContactForm() {
   const [errors, setErrors] = useState({});
 
@@ -97,9 +96,10 @@ function CreateContactForm() {
           ))}
           <Form.Control
             required
-            type="textarea"
+            as="textarea"
             name="content"
             value={content}
+            rows={4}
             onChange={handleChange}
             aria-label="content"
             placeholder="Please write your message here.."
