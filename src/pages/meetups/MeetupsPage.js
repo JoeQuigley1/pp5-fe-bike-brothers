@@ -6,6 +6,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import Meetup from "./Meetup";
 import { Container } from "react-bootstrap";
 import Asset from "../../components/Asset";
+import NoResults from "../../assets/no-results.png";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
@@ -51,7 +52,7 @@ function MeetupsPage({ message, filter = "" }) {
               
             ) : (
               <Container className={appStyles.Content}>
-                <Asset message={message} />
+                <Asset src={NoResults} message={message} />
               </Container>
             )}
           </>

@@ -30,7 +30,7 @@ export const FaqAccordion = () => {
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="2">
           <Card.Body>
-            Yes! It is an app created for my PP5 and therefore is completley
+            Yes! It is an app created for educational purposes as part of my PP5 and therefore is completley
             free.{" "}
           </Card.Body>
         </Accordion.Collapse>
