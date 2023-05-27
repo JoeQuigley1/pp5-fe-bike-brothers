@@ -103,7 +103,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Content:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.content?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -122,7 +122,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Date:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.date?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -140,7 +140,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Time:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.time?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -158,7 +158,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               City:
             </Form.Label>{" "}
-            {errors?.title?.map((message, idx) => (
+            {errors?.city?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -177,7 +177,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Venue:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.venue?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -196,7 +196,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Bike Type:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.bike_type?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -215,7 +215,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Duration:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.duration?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
@@ -234,7 +234,7 @@ function MeetupCreateForm() {
             <Form.Label className="flex-column justify-content-center">
               Spaces:
             </Form.Label>
-            {errors?.title?.map((message, idx) => (
+            {errors?.spaces?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}
               </Alert>
