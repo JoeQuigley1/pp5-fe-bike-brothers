@@ -29,6 +29,7 @@ const ProfileEditForm = () => {
     name: "",
     content: "",
     image: "",
+    name: "",
   });
   const { name, content, image } = profileData;
 
@@ -85,6 +86,15 @@ const ProfileEditForm = () => {
 
   const textFields = (
     <>
+    <Form.Group>
+    <Form.Label>Name</Form.Label>
+        <Form.Control
+          type="text"
+          value={name}
+          onChange={handleChange}
+          name="name"
+        />
+    </Form.Group>
       <Form.Group>
         <Form.Label>Bio</Form.Label>
         <Form.Control
