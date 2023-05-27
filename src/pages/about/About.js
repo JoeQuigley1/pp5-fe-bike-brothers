@@ -10,7 +10,7 @@ function About() {
     <Container className={styles.Content}>
         <Row>
             <Col>
-            <h2 className='py-2'>Welcome to Bike Bros</h2>
+            <h2 className='py-2'>Welcome to <strong>Bike Bros</strong></h2>
             <br/>
             <p>This site is for Bike Enthusiasts who want to share bike related content.</p>
             <br/>

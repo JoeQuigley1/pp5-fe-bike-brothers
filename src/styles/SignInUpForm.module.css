@@ -1,4 +1,8 @@
-.Row {
+.Welcome {
+  text-align: center;
+}
+
+Row {
     height: calc(100vh - 81px);
   }
   .Input {
