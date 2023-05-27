@@ -48,13 +48,82 @@ A link to the BACKEND README can be found here [here](https://github.com/JoeQuig
 ## Features
 ### Existing Features:
 - Navbar
+<br>
+
+![Navbar Logged Out](src/assets/readme_screenshots/navbar-loggedout.png)
+
+Logged In: 
+<br>
+
+![Navbar Logged In](src/assets/readme_screenshots/navbar-loggedout.png)
+<br>
+
+Sign up
+
+![Sign Up](src/assets/readme_screenshots/sign-up.png)
+<br>
+
+Sign in
+![Sign In](src/assets/readme_screenshots/Sign%20in.png)
+<br>
+
+
+
 - Posts
+
+Post Detail
+
+Create Post
+
+Edit Post
+
+
 - Profiles
+
+Most Followed Profiles
+<br>
+
+![Most Followed Profiles](src/assets/readme_screenshots/most-followed-profs.png)
+
 - Meetups
-- Create/Edit Meetup
-- Sign in
-- Sign out
-- About
+<br>
+
+Meetup Detail
+<br>
+
+![Meetup Detail](src/assets/readme_screenshots/meetup-detail.png)
+
+Meet Up Create Form
+
+
+<br>
+
+![Meetup Create Form](src/assets/readme_screenshots/create-meetup.png)
+
+- Meetup Edit Form
+
+
+
+<br>
+
+About
+<br>
+
+![About](src/assets/readme_screenshots/about.png)
+
+FAQ Accordion section
+
+<br>
+
+![FAQ](src/assets/readme_screenshots/Faq.png)
+
+<br>
+
+Contact Form
+
+![Contact Form](src/assets/readme_screenshots/contact-form.png)
+
+
 
 
 ## Testing
