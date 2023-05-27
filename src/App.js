@@ -36,8 +36,9 @@ function App() {
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />
-          <Route exact path="/posts/:id" render={() => <PostPage />} />
           <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
+          <Route exact path="/posts/:id" render={() => <PostPage />} />
+          
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route
             exact
@@ -82,9 +83,11 @@ function App() {
             render={() => <ProfileEditForm />}
           />
           <Route exact path="/meetups" render={() => <MeetupsPage message="No results" />} />
+          
+          
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
-          <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route exact path="/meetups/:id/edit" render={() => <MeetupEditForm />} />
+          <Route exact path="/meetups/:id" render={() => <MeetupPage />} />
           <Route exact path="/about"render={() => <About />} />
           <Route exact path="/contact"render={() => <CreateContactForm />} />
           <Route exact path="/confirmation"render={() => <ContactConfirmation />} />
