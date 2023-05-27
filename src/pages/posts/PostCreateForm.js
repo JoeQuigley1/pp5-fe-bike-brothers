@@ -101,9 +101,7 @@ function PostCreateForm() {
           <option value="standard">Standard</option>
           <option value="cruiser">Cruiser</option>
           <option value="sports">Sports</option>
-          <option value="naked">Naked</option>
           <option value="tourer">Tourer</option>
-          <option value="sports_touring">Sports Touring</option>
           <option value="scrambler">Scrambler</option>
           <option value="scooter">Scooter</option>
           <option value="moped">Moped</option>
