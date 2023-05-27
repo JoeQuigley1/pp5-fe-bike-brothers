@@ -74,7 +74,7 @@ function ProfilePage() {
         <Col lg={6}>
           <h3 className="m-2">{profile?.owner}</h3>
           <div className={`mx-2 ${styles.WordBreak}`}>
-            <strong>({profile?.name})</strong>
+            <strong>{profile?.name}</strong>
           </div>
           <Row className="justify-content-center no-gutters">
             <Col xs={3} className="my-2">

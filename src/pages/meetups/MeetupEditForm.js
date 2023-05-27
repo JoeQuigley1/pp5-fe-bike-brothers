@@ -285,7 +285,7 @@ function MeetupEditForm() {
         <br />
         <Row className={styles.SpaceContent}>
           <Button type="submit" className={styles.Button}>
-            Submit
+            Save Changes
           </Button>
 
           <Button onClick={() => history.goBack()} className={styles.Button}>
