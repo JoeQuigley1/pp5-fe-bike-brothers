@@ -18,6 +18,7 @@ const Post = (props) => {
     likes_count,
     like_id,
     title,
+    bike_type,
     content,
     image,
     updated_at,
@@ -93,7 +94,8 @@ const Post = (props) => {
       </Link>
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
-        {content && <Card.Text>{content}</Card.Text>}
+        {bike_type && <Card.Text>Bike Type: {bike_type}</Card.Text>}
+        <Card.Text>{content}</Card.Text>
         <div className={styles.PostBar}>
           {is_owner ? (
             <OverlayTrigger
