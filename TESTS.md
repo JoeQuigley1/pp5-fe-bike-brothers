@@ -60,6 +60,53 @@ Hamburger Icons
 
 All icons are clickable on all displays and lead the User to the desired page.
 
+#### Search Bar
+
+*As a user I can for posts title and user, so that I can find the posts and user profiles I am most interested in.*
+
+![Search Criteria](src/assets/testing_screenshots/search-crit.png)
+
+Users can use the search bar on the Home Page, Feed Page and Like Page to search for posts
+
+![Search Bar](src/assets/testing_screenshots/search-test.png)
+
+### Home Page
+
+*As a user I can navigate to the Home Page so that I can see all posts.*
+
+![Home Page Criteria](src/assets/testing_screenshots/home-crit.png)
+
+Once the User click the Home icon they are redirected to the Home page.
+
+All posts are displayed on the Home Page
+
+Search bar is displayed and can filter posts by user and title
+
+![Home Page Test](src/assets/testing_screenshots/home-test.png)
+
+### Feed Page
+
+*As a user I can navigate to the feed page so that I can see the posts of user I follow*
+
+![Feed Criteria](src/assets/testing_screenshots/feed-crit.png)
+
+Once a user clicks the feed icon they are redirected to the feed page where posts from users they follow
+
+![Feed Test](src/assets/testing_screenshots/feed-test.png)
+
+
+### Like Page
+
+*As a user I can navigate to the liked page so that I can quickly see all of the posts that I have liked*
+
+![Like Page Criteria](src/assets/testing_screenshots/like-Page-crit.png)
+
+Once a User navigates to the Liked Page all liked posts are displayed
+
+The search bar is displayed and the user can filter by post title and user
+
+![Liked Paged Test](src/assets/testing_screenshots/like-page-test.png)
+
 ### Contact
 
 #### Contact Page
@@ -255,6 +302,12 @@ The Post details are displayed.
 
 There is a comment section below the post where users can interact
 
+### Infinite Scroll
+
+*As a user I can keep scrolling through the content on the site and content is loaded for me automatically so that I don't have to click on next page*
+
+![Infinite Scroll Criteria](src/assets/testing_screenshots/infinite-croll-crit.png)
+
 ### Comments
 
 #### Create
@@ -304,6 +357,18 @@ Using the three dots menu a comment can be deleted.
 Once deleted the comment is no longer displayed and the data is removed from BE API
 
 ![Comment Delete Test](src/assets/testing_screenshots/comment-delete-test.png)
+
+#### View
+
+*As a user I would like to read comments made by other users so that I can connect with the community*
+
+![Comment View Criteria](src/assets/testing_screenshots/comment-view-crit.png)
+
+Comments are displayed under the post
+
+The number of comments are displayed beside the comment icon
+
+![Comment Display Test](src/assets/testing_screenshots/comment-view-test.png)
 
 ### Like
 
@@ -383,27 +448,90 @@ The changes are saved to the BE API
 
 ![Edited Profile Data](src/assets/testing_screenshots/profile-edit-data.png)
 
+### Followers
+
+#### Follow and Unfollow
+
+*As a user I can follow and unfollow other users so that I can see their content on the feed page*
+
+![Follow Criteria](src/assets/testing_screenshots/follow-crit.png)
+
+Users can follow and unfollow profiles through the follow and unfollow button
+
+![Follow Unfollow Button](src/assets/testing_screenshots/follow-unfollow.png)
+
+Once a profile is follower or unfollowed the data is stored or deleted in the BE API
+
+![Follow Data](src/assets/testing_screenshots/followed-be-data.png)
+
+#### Most followed
+
+*As a user I can view the most followed profiles of other users profiles so that I can see which profiles are popular.*
+
+![Most Followed Criteria](src/assets/testing_screenshots/most-followed-crit.png)
+
+Most Follower Profiles is visible on Home, Meetups, Feed and Liked pages
+
+The most followed Profiles are displayed with the username and avatar so they can be navigated to the profile display
+
+![Most Followed Test](src/assets/testing_screenshots/most-followed-test.png)
+
+
 
 
 
 
 #### Crud Functionality:
-|Posts| Comments | Likes | Meetups | Follow | Profile |
-|---|---|---|---|---|---|
-|Profile|A user can create and edit a profile and bio|pass|pass|n/a|as expected|
-|Comments|A user can create, delete and edit comments on posts|pass|pass|pass|n/a|
-|Likes|A user can like/unlike a post|pass|n/a|pass|n/a|
-|Meetups|A user can create, edit and delete a meetup|pass|pass|pass|as expected|
-|Follow|A user can follow/unfollow other users|pass|n/a|pass|n/a|
-|Post|A user can create, edit and delete a post|pass|pass|pass|as expected|
-- CRUD functionality has been tested and is working on the above. 
-- Profiles do not have have delete functionality.
-- Likes and Comments can only be created and deleted.
-- All links work and lead to the desired page
+
+| Feature | Expected Result |    Actual Result   | Development|Deployment| Comments |
+|-------|-----|----|----|----|------|
+|Profiles|Profile can be created |As Expected|Pass|Pass|N/A|
+|Profiles|Profile can be edited through the edit profile form |As Expected|Pass|Pass|As Owner|
+|Profile Password|Profile passwords can be edited by the edit password form |As Expected|Pass|Pass|As Owner|
+|Profiles|Profile Usernames can be edited by the username edit form |As Expected|Pass|Pass|As Owner|
+|Posts| Post can be created through the create form|As Expected|Pass|Pass|N/A|
+|Posts| Post can be edited through the edit form|As Expected|Pass|Pass|As Owner
+|Posts| Post can be deleted by the three dot menu|As Expected|Pass|Pass|As Owner
+|Comments| Comment can be created|As Expected|Pass|Pass|N/A|
+|Comments| Comment can be edited|As Expected|Pass|Pass|As Owner|
+|Comments| Comment can be deleted|As Expected|Pass|Pass|As Owner|
+|Likes| Likes can be created|As Expected|Pass|Pass|N/A|
+|Likes| Likes can be deleted|As Expected|Pass|Pass|As Owner|
+|Followers| Followers can be created by the follow button|As Expected|Pass|Pass|N/A|
+|Followers| Followers can be deleted by the unfollow button |As Expected|Pass|Pass|As Owner|
+|Meetups|Meetup can be created through the meetup form|As Expected|Pass|Pass|N/A|
+|Meetups |Meetup can be edited through the edit form|As Expected|Pass|Pass|As Owner|
+|Meetups |Meetup can be deleted by the three dot menu|As Expected|Pass|Pass|As Owner|
+|Contact|Contact  can be created by the contact form|As Expected|Pass|Pass|Contact details are intented to be adressed by admin therefore no display is provided in the FE|
 
 
 
 ### Form Validation
+
+#### Posts
+
+| Feature | Expected Result |    Actual Result   |Deployment| Comments |
+|-------|-----|----|----|----|
+|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | Content is not required|
+|Edit Form| Prompts should display when required fields are left blank |As Expected|Pass |  Content is not required|
+
+Screenshots of posts:
+
+![Create Post Validator Test](src/assets/testing_screenshots/create-post-form-validation.png)
+
+![Edit Post Validator Test](src/assets/testing_screenshots/edit-post-form-validation.png)
+
+#### Meetups
+
+| Feature | Expected Result |    Actual Result   |Deployment| Comments |
+|-------|-----|----|----|----|
+|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | N/A
+|Edit Form| Prompts should display when required fields are left blank |As Expected|Pass | N/A
+
+#### Contact
+| Feature | Expected Result |    Actual Result   |Deployment| Comments |
+|-------|-----|----|----|----|
+|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | N/A
 
 ### Validator Testing
 
