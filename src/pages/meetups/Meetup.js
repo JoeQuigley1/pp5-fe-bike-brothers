@@ -6,7 +6,7 @@ import Avatar from "../../components/Avatar";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import { axiosRes } from "../../api/axiosDefaults";
-import styles from "../../styles/Meetup.module.css"
+import styles from "../../styles/Meetup.module.css";
 import { useRedirect } from "../../hooks/useRedirect";
 
 const Meetup = (props) => {
@@ -46,7 +46,7 @@ const Meetup = (props) => {
   };
 
   return (
-    <Card >
+    <Card>
       <Card.Body className={styles.Title}>
         <Media className="justify-content-between py-2">
           <Link to={`/profiles/${profile_id}`}>
@@ -63,7 +63,7 @@ const Meetup = (props) => {
             )}{" "}
           </div>
         </Media>
-        <Link to={`/meetups/${id}`} >
+        <Link to={`/meetups/${id}`}>
           <h2>
             Title: {title}
             <i className="fas fa-arrow-up-right-from-square"></i>
@@ -71,10 +71,10 @@ const Meetup = (props) => {
         </Link>
       </Card.Body>
       <Container className={styles.Container}>
-        <Card >
-          <Card.Body className={styles.Content} >
-            <p >Date: {date}</p>
-            <p >Description: {content}</p>
+        <Card>
+          <Card.Body className={styles.Content}>
+            <p>Date: {date}</p>
+            <p>Description: {content}</p>
             <p>What city: {city}</p>
             <p>Location: {venue}</p>
             <p>Time: {time}</p>

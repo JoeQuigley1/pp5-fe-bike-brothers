@@ -136,7 +136,8 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/contact"
             >
-              <i className="fa-solid fa-pen-to-square"></i>Contact</NavLink>
+              <i className="fa-solid fa-pen-to-square"></i>Contact
+            </NavLink>
             <NavLink
               exact
               className={styles.NavLink}

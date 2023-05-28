@@ -14,7 +14,6 @@ import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
 
 function MeetupsPage({ message, filter = "" }) {
-
   useRedirect("loggedOut");
   const [meetups, setMeetups] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);

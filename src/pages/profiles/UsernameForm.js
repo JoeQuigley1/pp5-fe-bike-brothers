@@ -71,7 +71,7 @@ const UsernameForm = () => {
                 {message}
               </Alert>
             ))}
-            
+
             <Button
               className={`${btnStyles.Button} ${btnStyles.Blue}`}
               type="submit"

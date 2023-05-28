@@ -104,7 +104,7 @@ function PostEditForm() {
         </Alert>
       ))}
 
-<Form.Label>Bike Type:</Form.Label>
+      <Form.Label>Bike Type:</Form.Label>
       <Form.Group>
         <Form.Control
           as="select"

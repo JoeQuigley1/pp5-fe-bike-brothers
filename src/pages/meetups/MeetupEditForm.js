@@ -56,16 +56,22 @@ function MeetupEditForm() {
           bike_type,
           spaces,
           duration,
-          is_owner
+          is_owner,
         } = data;
 
-        is_owner ? setMeetupData({ title, content, date,
-          time,
-          city,
-          venue,
-          bike_type,
-          spaces,
-          duration, }) : history.push("/");
+        is_owner
+          ? setMeetupData({
+              title,
+              content,
+              date,
+              time,
+              city,
+              venue,
+              bike_type,
+              spaces,
+              duration,
+            })
+          : history.push("/");
       } catch (err) {
         // console.log(err);
       }

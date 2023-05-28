@@ -8,32 +8,29 @@ import Meetup from "./Meetup";
 import PopularProfiles from "../profiles/PopularProfiles";
 import { useRedirect } from "../../hooks/useRedirect";
 
-
 function MeetupPage() {
   useRedirect("loggedOut");
-    const { id } = useParams();
-    const [meetup, setMeetup] = useState({ results: [] });
+  const { id } = useParams();
+  const [meetup, setMeetup] = useState({ results: [] });
 
+  useEffect(() => {
+    const handleMount = async () => {
+      try {
+        const [{ data: meetup }] = await Promise.all([
+          axiosReq.get(`/meetups/${id}`),
+        ]);
+        setMeetup({ results: [meetup] });
+      } catch (err) {
+        console.log(err);
+      }
+    };
 
-    useEffect(() => {
-        const handleMount = async () => {
-            try {
-                const [{ data: meetup }] = await Promise.all([
-                    axiosReq.get(`/meetups/${id}`),
-                ]);
-                setMeetup({ results: [meetup]})
-            } catch (err) {
-                console.log(err)
-            }
-        }
-
-        handleMount()
-    }, [id])
-
+    handleMount();
+  }, [id]);
 
   return (
     <Row className="h-100">
-      <Col className="py-2 p-0 p-lg-2" >
+      <Col className="py-2 p-0 p-lg-2">
         <PopularProfiles mobile />
         <Meetup {...meetup.results[0]} setMeetup={setMeetup} meetupPage />
       </Col>

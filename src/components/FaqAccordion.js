@@ -1,12 +1,11 @@
 import React from "react";
 import { Accordion, Card } from "react-bootstrap";
 
-
 export const FaqAccordion = () => {
   return (
-    <Accordion >
+    <Accordion>
       <Card>
-        <Accordion.Toggle as={Card.Header} eventKey="0" >
+        <Accordion.Toggle as={Card.Header} eventKey="0">
           Can anyone add a Post or Meetup?
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">
@@ -30,8 +29,8 @@ export const FaqAccordion = () => {
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="2">
           <Card.Body>
-            Yes! It is an app created for educational purposes as part of my PP5 and therefore is completley
-            free.{" "}
+            Yes! It is an app created for educational purposes as part of my PP5
+            and therefore is completley free.{" "}
           </Card.Body>
         </Accordion.Collapse>
       </Card>
