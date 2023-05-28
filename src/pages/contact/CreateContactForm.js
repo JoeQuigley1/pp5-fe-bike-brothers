@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Container, Form, Row } from "react-bootstrap";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import Alert from "react-bootstrap/Alert";
 
 function CreateContactForm() {
   const [errors, setErrors] = useState({});
@@ -47,7 +48,6 @@ function CreateContactForm() {
             </Alert>
           ))}
           <Form.Control
-            required
             type="text"
             name="fname"
             value={fname}
@@ -63,7 +63,6 @@ function CreateContactForm() {
             </Alert>
           ))}
           <Form.Control
-            required
             type="text"
             name="lname"
             value={lname}
@@ -81,11 +80,10 @@ function CreateContactForm() {
           <Form.Control
             type="email"
             name="email"
-            required
             value={email}
             onChange={handleChange}
             aria-label="email"
-            placeholder="please write your email"
+            placeholder="Please write your email"
           ></Form.Control>
         </Form.Group>
         <Form.Group>
@@ -95,7 +93,6 @@ function CreateContactForm() {
             </Alert>
           ))}
           <Form.Control
-            required
             as="textarea"
             name="content"
             value={content}

@@ -6,9 +6,11 @@ import { axiosReq } from "../../api/axiosDefaults";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Meetup from "./Meetup";
 import PopularProfiles from "../profiles/PopularProfiles";
+import { useRedirect } from "../../hooks/useRedirect";
 
 
 function MeetupPage() {
+  useRedirect("loggedOut");
     const { id } = useParams();
     const [meetup, setMeetup] = useState({ results: [] });
 

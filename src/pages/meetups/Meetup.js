@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/Meetup.module.css"
+import { useRedirect } from "../../hooks/useRedirect";
 
 const Meetup = (props) => {
   const {
@@ -26,7 +27,7 @@ const Meetup = (props) => {
     duration,
     meetupPage,
   } = props;
-
+  useRedirect("loggedOut");
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
   const history = useHistory();

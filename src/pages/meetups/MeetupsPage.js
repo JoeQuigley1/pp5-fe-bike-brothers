@@ -7,12 +7,15 @@ import Meetup from "./Meetup";
 import { Container, Row } from "react-bootstrap";
 import Asset from "../../components/Asset";
 import NoResults from "../../assets/no-results.png";
+import { useRedirect } from "../../hooks/useRedirect";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
 
 function MeetupsPage({ message, filter = "" }) {
+
+  useRedirect("loggedOut");
   const [meetups, setMeetups] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
