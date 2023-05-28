@@ -512,8 +512,8 @@ The most followed Profiles are displayed with the username and avatar so they ca
 
 | Feature | Expected Result |    Actual Result   |Deployment| Comments |
 |-------|-----|----|----|----|
-|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | Content is not required|
-|Edit Form| Prompts should display when required fields are left blank |As Expected|Pass |  Content is not required|
+|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | Content and bike type are not required|
+|Edit Form| Prompts should display when required fields are left blank |As Expected|Pass |  Content and bike type are not required|
 
 Screenshots of posts:
 
@@ -525,20 +525,58 @@ Screenshots of posts:
 
 | Feature | Expected Result |    Actual Result   |Deployment| Comments |
 |-------|-----|----|----|----|
-|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | N/A
-|Edit Form| Prompts should display when required fields are left blank |As Expected|Pass | N/A
+|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | Content, Date and Time are not required
+|Edit Form| Prompts should display when required fields are left blank |As Expected|Pass | Content, Date and Time are not required
+
+
+![Create Meetup Form](src/assets/testing_screenshots/create-meetup-form-validation.png)
+
+![Edit Meetup Form](src/assets/testing_screenshots/edit-meetup-form-validation.png)
 
 #### Contact
 | Feature | Expected Result |    Actual Result   |Deployment| Comments |
 |-------|-----|----|----|----|
-|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | N/A
+|Create Form| Prompts should display when required fields are left blank |As Expected|Pass | Email field has an extra check to prompt email format
+
+![Contact Form](src/assets/testing_screenshots/contact-form-validation-email-alert.png)
 
 ### Validator Testing
 
 
 
-#### ES Lint
+#### ESLint
+
+|Folder |Files|Errors | Result | Comments|
+|---|---|---|---|---|
+|api|axiosDefaults.js|None|PASS|N/A|
+|components |Asset.js, Avatar.js, FaqAccordion.js, MoreDropDown.js, NavBar.js, NotFound.js|None|PASS|N/A|
+|contexts|CurrentUserContext.js, ProfileDataContext.js|None|PASS|N/A|
+|hooks|useClickOutsideToggle.js, useRedirect.js|None|PASS|N/A|
+|about|About.js |None|PASS|N/A|
+|auth| SignInForm.js, SignUpForm.js |None|PASS|N/A|
+|comments|Comment.js, CommentCreateForm.js CommentEditForm.js|None|PASS|N/A|
+|contact|Confirmation.js, CreateContactForm.js|None|PASS|N/A|
+|meetups|Meetup.js, MeetupCreateForm.js, MeetupEditForm.js, MeetupPage.js, MeetupsPage.js|None|PASS|N/A|
+|posts|Post.js, PostCreateForm.js, PostEditForm.js, PostPage.js, PostsPage.js|None|PASS|N/A|
+|profiles|PopularProfiles.js, Profile.js, ProfileEditForm.js, ProfilePage.js, UsernameForm.js UserPasswordForm.js|None|PASS|N/A|
+|utils|utils.js|None|PASS|N/A|
+
+- There are no major issues impacting functionality of the application.
+
 
 #### W3C Css
 
+All CSS code passes through a validator with no errors. 
+
+![CSS Validation](src/assets/testing_screenshots/W3C-validator%20testing.png)
+
 ### Lighthouse Testing 
+
+The site scores highly on several fields. 
+
+![Accesibility](src/assets/testing_screenshots/lighthouse-accesibility.png)
+
+
+![Best Practices](src/assets/testing_screenshots/lighthouse-best-practices.png)
+
+![SEO](src/assets/testing_screenshots/lighthouse-testing-seo.png)
