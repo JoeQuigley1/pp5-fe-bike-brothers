@@ -5,7 +5,7 @@
 ### Authentication
 
 #### Sign up
-- As a user I can sign up and register as a user so that I can gain full access to the site
+*As a user I can sign up and register as a user so that I can gain full access to the site*
 
 ![Sign up](/src/assets/testing_screenshots/Sign-up-crit.png)
 
@@ -24,6 +24,8 @@ User is then redirected to the Sign In page
 
 #### Sign In
 
+*As a user I can Sign in to the app so that I can gain access to all features available for a signed in user*
+
 ![Sign In Criteria](src/assets/testing_screenshots/Sign-in-crit.png)
 
 User must provide credentials to gain full access.
@@ -37,6 +39,8 @@ All App functionality is then available via Navbar.
 ### Navigation
 
 #### Navbar
+
+*As a user you can view a navbar from every page so that I can navigate easily betwen pages*
 
 ![Navbar Criteria](src/assets/testing_screenshots/navbar-crit.png)
 
@@ -110,6 +114,7 @@ The search bar is displayed and the user can filter by post title and user
 ### Contact
 
 #### Contact Page
+*As a User I can Contact the site admin of the site through a contact Form*
 
 ![Contact Criteria](src/assets/testing_screenshots/contact-crit.png)
 
@@ -124,6 +129,8 @@ Once the form is completed the Data is sent to the BackEnd API.
 The User is then redirected to a Confirmation Page to assure them that their query has been received.
 
 #### Confirmation Page
+
+*As a user I can contact the admin directly so that I can can ask question or give feedback.*
 
 ![Confirmation Criteria](src/assets/testing_screenshots/confirmation-crit.png)
 
@@ -374,7 +381,7 @@ The number of comments are displayed beside the comment icon
 
 #### Create and Delete
 
-*As a user I can like a post so that I can show my support for the posts that interest me*
+*As a user I can like and unlike a post so that I can show my support for the posts that interest me*
 
 ![Like and Unlike Post Criteria](src/assets/testing_screenshots/like-crit.png)
 

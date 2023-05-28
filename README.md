@@ -1,6 +1,6 @@
 ## Bike Bros
 
-Add AmIResponsive HERE
+![Am I Responsive Checker](src/assets/testing_screenshots/am-i-responsive.png)
 
 # Introduction 
 
@@ -24,9 +24,19 @@ A link to the BACKEND README can be found here [here](https://github.com/JoeQuig
 
 ### Purpose
 
+The site is designed give an interactive space for bike-enthusiasts to share bike related content, meetup and to find out more about bikes.
+
 ### Site Goals
 
+Bike Bros aims to establish a sense of community among its users through the sharing of content, meetups and interactions both online and offline. 
+
+### User Goals
+
+To engage faithfully with the site and to share anything bike related so all users can make the most of what the site has to offer. 
+
 ### User Stories
+
+The Issues created for this 
 
 ### wireframes
 
