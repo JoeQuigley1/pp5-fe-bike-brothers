@@ -21,7 +21,7 @@ function MeetupPage() {
         ]);
         setMeetup({ results: [meetup] });
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 

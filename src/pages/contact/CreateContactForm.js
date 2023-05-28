@@ -31,7 +31,7 @@ function CreateContactForm() {
       await axiosReq.post("/contact/", contactFormData);
       history.push("/confirmation");
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       setErrors(err.response?.data);
     }
   };

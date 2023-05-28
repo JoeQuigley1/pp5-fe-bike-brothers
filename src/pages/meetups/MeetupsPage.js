@@ -26,7 +26,7 @@ function MeetupsPage({ message, filter = "" }) {
         setMeetups(data);
         setHasLoaded(true);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 
