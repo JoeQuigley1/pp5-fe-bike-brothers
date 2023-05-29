@@ -535,7 +535,9 @@ After some help from Joanne at tutor support we found a solution which was addin
     if (time) formData.append("time", time);
 ```
 
+#### Un fixed bugs
 
+There are no unfixed bugs found during testing. 
 
 
 ### Form Validation
@@ -572,7 +574,7 @@ Screenshots of posts:
 
 ![Contact Form](src/assets/testing_screenshots/contact-form-validation-email-alert.png)
 
-As the contact data is intended to be adressed by the Admin directly, the email field needing email format and susequent prompts are for UX purposes.   
+As the contact data is intended to be adressed by the Admin directly, the email field needing email format and subsequent prompts are for UX purposes.   
 
 ### Validator Testing
 
@@ -612,4 +614,11 @@ The site scores highly on several fields.
 
 ![Lighthouse Testing](src/assets/testing_screenshots/light-house-testing.png)
 
+The loading time for images on the site was a major contributor to the lower performance score. 
 
+
+### Responsive Design 
+
+The site has been tested using several browsers including: Google Chrome, Firefox, and Microsoft Edge browsers. 
+
+The site was tested on several screen sizes and device sizes. 

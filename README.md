@@ -62,7 +62,7 @@ The Kanban board can be found [here](https://github.com/users/JoeQuigley1/projec
 ### Feature Planning 
 
 -	Neutral colour scheme to make the site easy to view.
--	Navigation which is user friendly and available on all pages
+-	Navigation which is user friendly and available on all pages so users can easily access the desired page
 -	Restricted navigation for logged out users
 -	Full Navigation functionality for logged in users
 -	Posts – Logged in users can create edit read and delete bike related posts. 
@@ -80,7 +80,7 @@ The Kanban board can be found [here](https://github.com/users/JoeQuigley1/projec
 
 ### Existing Features:
 - Navbar
-
+Achieve through the use of CurrentUserContext
 
 ![Navbar Logged Out](src/assets/readme_screenshots/navbar-loggedout.png)
 
@@ -98,6 +98,12 @@ Sign up
 Sign in
 
 ![Sign In](src/assets/readme_screenshots/Sign%20in.png)
+
+Hamburger 
+
+UseClickOutsideToggle.js used to enhance the user experience when using the Hamburger menu
+
+![Hamburger Menu](src/assets/testing_screenshots/hamburger-icons.png)
 
 
 -Home Page which includes the posts lists
@@ -133,8 +139,12 @@ Profiles
 
 ![Avatar](src/assets/readme_screenshots/avatar.png)
 
-- Most Followed Profiles
+- Follow and Un Follow
+Possible through the use of ProfileDataContext.js
 
+![Follow and Unfollow](src/assets/testing_screenshots/follow-unfollow.png)
+
+- Most Followed Profiles
 
 ![Most Followed Profiles](src/assets/readme_screenshots/most-followed-profs.png)
 
@@ -146,7 +156,9 @@ Meetups
 
 ![Meetup Detail](src/assets/readme_screenshots/meetup-detail.png)
 
-- Meet Up Create Form
+- Meet Up Create form
+
+Possible through the use of DropdownMenu.js component
 
 ![Meetup Create Form](src/assets/readme_screenshots/create-meetup.png)
 
@@ -172,7 +184,7 @@ Confirmation
 ![Confirmation](src/assets/readme_screenshots/confirmation.png)
 
 
-### Future Features to Implement(Future additions to this project)
+### Future Features to Implement(Not included in this project)
 
 - A Booking section in the meetup section where users can book into a meetup
 - Add an option to like a meetup to a good Map location to the 
@@ -187,16 +199,18 @@ Confirmation
 - Manual Testing can be found [here](/TESTS.md).
 
 ## Frameworks, Libraries & Programs Used
-- [FontAwesome](https://fontawesome.com/): Used for the social links, footers, and 
-- [GoogleFonts](https://fonts.google.com/): Font: Used to for the font "Lexend" which is used throughout the project
-- Gitpod: Used to build and create the project to Github.
-- Github: Used to store my repository for submission
+- [FontAwesome](https://fontawesome.com/): Used for the social links and icons. 
+- [GoogleFonts](https://fonts.google.com/): Font: Used to for the font "Lexend" which is used throughout the project.
+- [Gitpod](https://gitpod.io/): Used to build and create the project to Github.
+- [Github](https://github.com/): Used to store my repository for submission.
+- [Github Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects): Github projects was use to create User Stories.
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi): Plugin was used in tandem with Chrom DevTools to check for errors. 
 - [LucidChart](https://www.lucidchart.com/): Used to design wireframes and mockups and Database mockups for the backend.
 - [Favicon](https://favicon.io/): Used to provide the image for the icon and tab
-- Django: Used to build the backend API for the front-end side of the project.
-- ReactJS: Used to build the components in the front-end of the project.
+- [Django](https://www.djangoproject.com/): Used to build the backend API for the front-end side of the project.
+- [ReactJS](https://legacy.reactjs.org/docs/getting-started.html): Used to build the components in the front-end of the project.
 - [AmIResponsive](https://ui.dev/amiresponsive)
-- React-Bootstrap: For the styling library used in the project, introduced in the walkthrough during the course. 
+- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/): For the styling library used in the project, introduced in the walkthrough during the course. 
 
 ## Components
 
@@ -284,10 +298,10 @@ The steps used to deploy this project can be seen in steps 19-39 in the Deployme
 - Code Institute: The base of this project comes from the Moments walkthrough used as guide when making this and building upon it to make the project my own.  
 - Tutor support for their help in solving the **npx create-react-app . --use-npm** problem
 - Stack Overflow for the wealth of knowledge 
-- React Bootstrap Documentation 
-- W3Schools
-- MDN Web Docs
-- React Documentation
+- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/)
+- [W3Schools](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [React Documentation](https://legacy.reactjs.org/versions)
 
 ## Acknowledgements 
 
