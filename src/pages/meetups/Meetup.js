@@ -39,7 +39,7 @@ const Meetup = (props) => {
   const handleDelete = async () => {
     try {
       await axiosRes.delete(`/meetups/${id}/`);
-      history.goBack();
+      history.push(`/meetups`);
     } catch (err) {
       // console.log(err);
     }

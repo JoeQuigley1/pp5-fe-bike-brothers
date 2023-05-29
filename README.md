@@ -36,7 +36,7 @@ To engage faithfully with the site and to share anything bike related so all use
 
 ### User Stories
 
-The Issues created for this 
+The Issues created for this site found [here](src/assets/readme_screenshots/userstories.md)
 
 ### wireframes
 
@@ -55,7 +55,24 @@ The Issues created for this
 ### Typography
 - The font I chose to use in my app is "Lexend" as it is a widely used font, and very user-friendly. This allows a better user experience when reading content. 
 
+### Feature Planning 
+
+-	Neutral colour scheme to make the site easy to view.
+-	Navigation which is user friendly and available on all pages
+-	Restricted navigation for logged out users
+-	Full Navigation functionality for logged in users
+-	Posts – Logged in users can create edit read and delete bike related posts. 
+-	Search posts: Search bar is displayed in Home Feed and Liked pages where users can search by title and user.
+-	Comments: Users can create edit and delete comments under posts 
+-	Likes: Users can like posts
+-	Meetups – Logged in users can create edit read and delete meetups. 
+-	Users can sign in and sign out.
+-	Users can edit their profiles.
+-	Form validation will help communicate errors to the user.
+
+
 ## Features
+
 ### Existing Features:
 - Navbar
 <br>
@@ -143,9 +160,9 @@ Contact Form
 
 ## Frameworks, Libraries & Programs Used
 - Font Awesome: Used for the social links, footers, and 
-- Google: Font: NEED TO UPDATE FONT 
-- Gitpod
-- Github
+- Google: Font: Used to for the font "Lexend" which is used throughout the project
+- Gitpod: Used to build and create the project to Github.
+- Github: Used to store my repository for submission
 - Lucidchart: Used to design wireframes and mockups and Database mockups for the backend.
 - Favicon: Used to provide the image for the icon and tab
 - Django: Used to build the backend API for the front-end side of the project.

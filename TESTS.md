@@ -512,6 +512,17 @@ The most followed Profiles are displayed with the username and avatar so they ca
 |Contact|Contact  can be created by the contact form|As Expected|Pass|Pass|Contact details are intented to be adressed by admin therefore no display is provided in the FE|
 
 
+### Bugs
+
+#### Fixed bugs
+
+A Bug was noticed when Deleting the Post and Meetup pages. 
+
+When a user edits a post and then immediately deletes the post, the user was then redirected to the edit form page of the deleted post. This error occurred because of the history.goBack() call on the handle Delete function used in Post and Meetup. 
+
+The bug was fixed by replacing the goBack() call with a history.push(`/`) and history.push(`/meetups`) which sends the user to the Home Page rather than the deleted id url. 
+
+
 
 ### Form Validation
 
