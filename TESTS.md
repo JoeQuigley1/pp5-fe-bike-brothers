@@ -572,13 +572,15 @@ Screenshots of posts:
 
 ![Contact Form](src/assets/testing_screenshots/contact-form-validation-email-alert.png)
 
+As the contact data is intended to be adressed by the Admin directly, the email field needing email format and susequent prompts are for UX purposes.   
+
 ### Validator Testing
 
 
 
 #### ESLint
 
-I used ![ESlint](https://eslint.org/) to manually test the jsx files.
+I used [ESlint](https://eslint.org/) to manually test the jsx files
 
 |Folder |Files | Result | Comments|
 |---|---|---|---|
@@ -608,9 +610,6 @@ All CSS code passes through a validator with no errors.
 
 The site scores highly on several fields. 
 
-![Accesibility](src/assets/testing_screenshots/lighthouse-accesibility.png)
+![Lighthouse Testing](src/assets/testing_screenshots/light-house-testing.png)
 
 
-![Best Practices](src/assets/testing_screenshots/lighthouse-best-practices.png)
-
-![SEO](src/assets/testing_screenshots/lighthouse-testing-seo.png)

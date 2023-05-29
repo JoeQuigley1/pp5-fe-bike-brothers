@@ -1,6 +1,6 @@
-## Bike Bros
+# Bike Bros
 
-![Am I Responsive Checker](src/assets/testing_screenshots/am-i-responsive.png)
+![Am I Responsive Checker](src/assets/readme_screenshots/amiresponsive.png)
 
 # Introduction 
 
@@ -36,7 +36,11 @@ To engage faithfully with the site and to share anything bike related so all use
 
 ### User Stories
 
-The Issues created for this site found [here](src/assets/readme_screenshots/userstories.md)
+The Issues created for this site can be found [here](https://github.com/JoeQuigley1/pp5-fe-bike-brothers/issues?q=is%3Aissue+is%3Aclosed)
+
+The Kanban board can be found [here](https://github.com/users/JoeQuigley1/projects/9) and a link to the User Stories can be found [here](src/assets/readme_screenshots/userstories.md)
+
+
 
 ### wireframes
 
@@ -65,6 +69,7 @@ The Issues created for this site found [here](src/assets/readme_screenshots/user
 -	Search posts: Search bar is displayed in Home Feed and Liked pages where users can search by title and user.
 -	Comments: Users can create edit and delete comments under posts 
 -	Likes: Users can like posts
+-   Follow and unfollow: To see more content from the people I follow. 
 -	Meetups – Logged in users can create edit read and delete meetups. 
 -	Users can sign in and sign out.
 -	Users can edit their profiles.
@@ -75,81 +80,104 @@ The Issues created for this site found [here](src/assets/readme_screenshots/user
 
 ### Existing Features:
 - Navbar
-<br>
+
 
 ![Navbar Logged Out](src/assets/readme_screenshots/navbar-loggedout.png)
 
 Logged In: 
-<br>
 
-![Navbar Logged In](src/assets/readme_screenshots/navbar-loggedout.png)
-<br>
+
+![Navbar Logged In](src/assets/readme_screenshots/navbar-loggedin.png)
+
 
 Sign up
 
 ![Sign Up](src/assets/readme_screenshots/sign-up.png)
-<br>
+
 
 Sign in
+
 ![Sign In](src/assets/readme_screenshots/Sign%20in.png)
-<br>
 
 
+-Home Page which includes the posts lists
 
-- Posts
+![HomePage](src/assets/testing_screenshots/home-test.png)
+
 
 Post Detail
 
+![PostDetail](src/assets/readme_screenshots/post-detail-view.png)
+
 Create Post
+
+![Create Post](src/assets/testing_screenshots/post-create-form.png)
+
 
 Edit Post
 
+![Edit Form](src/assets/readme_screenshots/post-edit-view.png)
 
-- Profiles
 
-Most Followed Profiles
-<br>
+Comments
+
+![Comment](src/assets/readme_screenshots/comment.png)
+
+Likes 
+
+![Likes](src/assets/testing_screenshots/like-icon.png)
+
+Profiles
+
+- Avatar component 
+
+![Avatar](src/assets/readme_screenshots/avatar.png)
+
+- Most Followed Profiles
+
 
 ![Most Followed Profiles](src/assets/readme_screenshots/most-followed-profs.png)
 
-- Meetups
-<br>
+Meetups
 
-Meetup Detail
-<br>
+![Meetup](src/assets/readme_screenshots/meetups.png)
+
+- Meetup Detail
 
 ![Meetup Detail](src/assets/readme_screenshots/meetup-detail.png)
 
-Meet Up Create Form
-
-
-<br>
+- Meet Up Create Form
 
 ![Meetup Create Form](src/assets/readme_screenshots/create-meetup.png)
 
 - Meetup Edit Form
 
+![Meetup Edit Form](src/assets/readme_screenshots/edit-meetup.png)
 
-
-<br>
 
 About
-<br>
 
 ![About](src/assets/readme_screenshots/about.png)
 
 FAQ Accordion section
 
-<br>
-
 ![FAQ](src/assets/readme_screenshots/Faq.png)
-
-<br>
 
 Contact Form
 
 ![Contact Form](src/assets/readme_screenshots/contact-form.png)
 
+Confirmation 
+
+![Confirmation](src/assets/readme_screenshots/confirmation.png)
+
+
+### Future Features to Implement(Future additions to this project)
+
+- A Booking section in the meetup section where users can book into a meetup
+- Add an option to like a meetup to a good Map location to the 
+- Add a review section to the Meetups 
+- A Chat feature where logged in users can communicate directly. 
 
 
 
@@ -159,14 +187,16 @@ Contact Form
 - Manual Testing can be found [here](/TESTS.md).
 
 ## Frameworks, Libraries & Programs Used
-- Font Awesome: Used for the social links, footers, and 
-- Google: Font: Used to for the font "Lexend" which is used throughout the project
+- [FontAwesome](https://fontawesome.com/): Used for the social links, footers, and 
+- [GoogleFonts](https://fonts.google.com/): Font: Used to for the font "Lexend" which is used throughout the project
 - Gitpod: Used to build and create the project to Github.
 - Github: Used to store my repository for submission
-- Lucidchart: Used to design wireframes and mockups and Database mockups for the backend.
-- Favicon: Used to provide the image for the icon and tab
+- [LucidChart](https://www.lucidchart.com/): Used to design wireframes and mockups and Database mockups for the backend.
+- [Favicon](https://favicon.io/): Used to provide the image for the icon and tab
 - Django: Used to build the backend API for the front-end side of the project.
 - ReactJS: Used to build the components in the front-end of the project.
+- [AmIResponsive](https://ui.dev/amiresponsive)
+- React-Bootstrap: For the styling library used in the project, introduced in the walkthrough during the course. 
 
 ## Components
 
@@ -180,8 +210,6 @@ Contact Form
 - UseClickOutsideToggle.js: Used to collapse the navbar burger menu when an item or an area outside the menu is clicked.
 - useRedirect.js: Redirects user to another page if they do not have appropriate access. 
 - utils.js: Supplies Infinite Scroll functionality and JWT functionality accross entire app. 
-
-
 
 
 # Project Setup and Initial Deployment
@@ -202,10 +230,12 @@ This Step raised an error which was consistent throughout the project.
 7. Confirm the changes have rendered in the browser preview then add, commit and push changes. 
 
 8. Create a new app in Heroku. 
+-   Click "New" and Create new app"
+-   Choose an app name and region
 
 9. Click on 'Deploy tab and go to the 'Deployment Method'. Click on Github.
 
-10. Connect to a Github account  and search for the relevant repository.
+10. Connect to a Github account and search for the relevant repository.
 
 11. Use 'Manual Deply and click 'Deploy Branch'. Click on 'build logs' to monitor the build. 
 
@@ -241,14 +271,25 @@ As of November 2022, Heroku ceased to provide a free service. The hosting of thi
 
 The steps used to deploy this project can be seen in steps 19-39 in the Deployment section of the BackEnd README [here](https://github.com/JoeQuigley1/pp5-drf-bike-brothers#deployment).
 
+
 ### Media
 
 - Favicon and Logo by <a href="https://www.flaticon.com/free-icons/motorcycle" title="motorcycle icons">Motorcycle icons created by Freepik - Flaticon</a>
 - Avatar and No Results images are from Code Institute Moments walkthrough project
+- 404 image was <a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
+- Bike images were taken from [Pexels](https://www.pexels.com)
 
+
+### Credit 
+- Code Institute: The base of this project comes from the Moments walkthrough used as guide when making this and building upon it to make the project my own.  
+- Tutor support for their help in solving the **npx create-react-app . --use-npm** problem
+- Stack Overflow for the wealth of knowledge 
+- React Bootstrap Documentation 
+- W3Schools
+- MDN Web Docs
+- React Documentation
 
 ## Acknowledgements 
-
 
 - [Martina Terlevic](https://github.com/SephTheOverwitch): For help and support throughout a tough year.
 - Tutor support for their help in solving the **npx create-react-app . --use-npm** problem
