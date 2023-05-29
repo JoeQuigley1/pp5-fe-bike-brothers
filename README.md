@@ -239,7 +239,7 @@ web: serve -s build
 
 As of November 2022, Heroku ceased to provide a free service. The hosting of this website is carried out using the free service [Elephant SQL](https://www.elephantsql.com/). 
 
-The steps used to deploy this project can be seen [here](https://code-institute-students.github.io/deployment-docs/30-pp4/django-01-create-a-database).
+The steps used to deploy this project can be seen in steps 19-39 in the Deployment section of the BackEnd README [here](https://github.com/JoeQuigley1/pp5-drf-bike-brothers#deployment).
 
 ### Media
 

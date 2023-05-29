@@ -82,7 +82,7 @@ function App() {
             path="/profiles/:id/edit"
             render={() => <ProfileEditForm />}
           />
-          <Route exact path="/meetups" render={() => <MeetupsPage message="No results" />} />
+          <Route exact path="/meetups" render={() => <MeetupsPage message="No meetups yet...why not add one?" />} />
           
           
           <Route exact path="/meetups/create" render={() => <MeetupCreateForm />} />
