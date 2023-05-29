@@ -93,8 +93,8 @@ function MeetupEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
-    formData.append("date", date);
-    formData.append("time", time);
+    if (date) formData.append("date", date);
+    if (time) formData.append("time", time);
     formData.append("city", city);
     formData.append("venue", venue);
     formData.append("bike_type", bike_type);
@@ -169,7 +169,7 @@ function MeetupEditForm() {
             <Form.Control
               type="date"
               name="date"
-              value={date}
+              value={date || ""}
               onChange={handleChange}
               aria-label="date"
             />
@@ -187,7 +187,7 @@ function MeetupEditForm() {
             <Form.Control
               type="time"
               name="time"
-              value={time}
+              value={time || ""}
               onChange={handleChange}
               aria-label="time"
             />
@@ -196,7 +196,7 @@ function MeetupEditForm() {
           <Form.Group>
             <Form.Label className="flex-column justify-content-center">
               City:
-            </Form.Label>{" "}
+            </Form.Label>
             {errors?.city?.map((message, idx) => (
               <Alert variant="danger" key={idx}>
                 {message}

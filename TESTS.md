@@ -516,11 +516,25 @@ The most followed Profiles are displayed with the username and avatar so they ca
 
 #### Fixed bugs
 
-A Bug was noticed when Deleting the Post and Meetup pages. 
+1. A Bug was noticed when Deleting the Post and Meetup pages. 
 
 When a user edits a post and then immediately deletes the post, the user was then redirected to the edit form page of the deleted post. This error occurred because of the history.goBack() call on the handle Delete function used in Post and Meetup. 
 
 The bug was fixed by replacing the goBack() call with a history.push(`/`) and history.push(`/meetups`) which sends the user to the Home Page rather than the deleted id url. 
+
+
+2. There was a bug in the Form Validation where the Date and Time fields in the meetups threw an error when editing.
+
+Both fields are intentionally left as not required fields and therefore should not throw an error. 
+
+![Error Bug](src/assets/testing_screenshots/form%20error.png)
+
+After some help from Joanne at tutor support we found a solution which was adding an if statement the formData.append() call.
+```
+    if (date) formData.append("date", date);
+    if (time) formData.append("time", time);
+```
+
 
 
 
@@ -564,20 +578,22 @@ Screenshots of posts:
 
 #### ESLint
 
-|Folder |Files|Errors | Result | Comments|
-|---|---|---|---|---|
-|api|axiosDefaults.js|None|PASS|N/A|
-|components |Asset.js, Avatar.js, FaqAccordion.js, MoreDropDown.js, NavBar.js, NotFound.js|None|PASS|N/A|
-|contexts|CurrentUserContext.js, ProfileDataContext.js|None|PASS|N/A|
-|hooks|useClickOutsideToggle.js, useRedirect.js|None|PASS|N/A|
-|about|About.js |None|PASS|N/A|
-|auth| SignInForm.js, SignUpForm.js |None|PASS|N/A|
-|comments|Comment.js, CommentCreateForm.js CommentEditForm.js|None|PASS|N/A|
-|contact|Confirmation.js, CreateContactForm.js|None|PASS|N/A|
-|meetups|Meetup.js, MeetupCreateForm.js, MeetupEditForm.js, MeetupPage.js, MeetupsPage.js|None|PASS|N/A|
-|posts|Post.js, PostCreateForm.js, PostEditForm.js, PostPage.js, PostsPage.js|None|PASS|N/A|
-|profiles|PopularProfiles.js, Profile.js, ProfileEditForm.js, ProfilePage.js, UsernameForm.js UserPasswordForm.js|None|PASS|N/A|
-|utils|utils.js|None|PASS|N/A|
+I used ![ESlint](https://eslint.org/) to manually test the jsx files.
+
+|Folder |Files | Result | Comments|
+|---|---|---|---|
+|api|axiosDefaults.js|PASS|N/A|
+|components |Asset.js, Avatar.js, FaqAccordion.js, MoreDropDown.js, NavBar.js, NotFound.js|PASS|N/A|
+|contexts|CurrentUserContext.js, ProfileDataContext.js|PASS|N/A|
+|hooks|useClickOutsideToggle.js, useRedirect.js|PASS|N/A|
+|about|About.js |PASS|N/A|
+|auth| SignInForm.js, SignUpForm.js |PASS|N/A|
+|comments|Comment.js, CommentCreateForm.js CommentEditForm.js|PASS|N/A|
+|contact|Confirmation.js, CreateContactForm.js|PASS|N/A|
+|meetups|Meetup.js, MeetupCreateForm.js, MeetupEditForm.js, MeetupPage.js, MeetupsPage.js|PASS|N/A|
+|posts|Post.js, PostCreateForm.js, PostEditForm.js, PostPage.js, PostsPage.js|PASS|N/A|
+|profiles|PopularProfiles.js, Profile.js, ProfileEditForm.js, ProfilePage.js, UsernameForm.js UserPasswordForm.js|PASS|N/A|
+|utils|utils.js|PASS|N/A|
 
 - There are no major issues impacting functionality of the application.
 
