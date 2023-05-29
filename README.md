@@ -80,6 +80,7 @@ The Kanban board can be found [here](https://github.com/users/JoeQuigley1/projec
 
 ### Existing Features:
 - Navbar
+
 Achieve through the use of CurrentUserContext
 
 ![Navbar Logged Out](src/assets/readme_screenshots/navbar-loggedout.png)
@@ -306,5 +307,7 @@ The steps used to deploy this project can be seen in steps 19-39 in the Deployme
 ## Acknowledgements 
 
 - [Martina Terlevic](https://github.com/SephTheOverwitch): For help and support throughout a tough year.
-- Tutor support for their help in solving the **npx create-react-app . --use-npm** problem
+- Tutor support for their help throughout the course and in solving the **npx create-react-app . --use-npm** to get me started. 
 - Slack for the huge archive of helpful information
+
+- A final acknowlegement to my late mother Breda who sadly passed away before I finished this course. She was a constant support to me and is and always will be greatly missed.  
