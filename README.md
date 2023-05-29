@@ -188,7 +188,7 @@ Confirmation
 ### Future Features to Implement(Not included in this project)
 
 - A Booking section in the meetup section where users can book into a meetup
-- Add an option to like a meetup to a good Map location to the 
+- Add an option to like a meetup 
 - Add a review section to the Meetups 
 - A Chat feature where logged in users can communicate directly. 
 
